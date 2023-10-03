@@ -1,0 +1,150 @@
+body{
+ padding: 0;
+ margin: 0;   
+}
+.grid-container{
+    display: grid;
+    max-width: 100vw;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 100vh;
+}
+.grid-container > div:nth-child(1){
+    padding: 20px;
+    border-right: 1px solid #999;
+}
+.grid-container > div:nth-child(2){
+
+}
+.chatHead{
+  
+    height: 78px;
+    padding: 20px;
+    border-bottom: 1px dotted #999;
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+
+}
+.chatBody{
+    background-color: #ffffff;
+    height: 80%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 40px 40px;
+    gap: 100px;
+}
+.chatsender{
+    background-color: #eeeeee;
+    height: 60px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+
+}
+.chatIcon{
+    justify-self: end;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+}
+.chatName{
+    display: flex;
+    align-items: center;
+}
+.icon{
+    width: 24px;
+}
+.sender{
+    grid-column: 1 / span 4 ;
+    
+    border-radius: 5px 5px 5px 0px;
+    padding: 5px;
+    display: flex;
+    gap: 10px;
+
+}
+.meschat{
+    background-color: #b5e1cb;
+    padding: 10px;
+    height: 80px;
+    border-radius: 0px 10px 10px 10px;
+
+}
+.meschat2{
+    background-color:#9edef1 ;
+    padding: 10px;
+    height: 80px;
+    border-radius: 10px 0px 10px 10px;
+
+}
+.receiver{
+    grid-column:3 / span 6 ;
+   
+    border-radius: 0px 5px 5px 5px;
+    padding: 5px;
+    display: flex;
+    gap: 10px;
+
+}
+.image{
+    height: 40px;
+    width: 40px;
+    border-radius: 30px;
+    margin-right: 5px;
+}
+.chatperson{
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+.time{
+    color: #9a9a9a;
+}
+.chatHeadIcon{
+    font-size: 24px;
+}
+.video{
+    margin-right: 20px;
+    font-size: 24px;
+}
+.send{
+    background-color: #0e0d0d;
+    color: #ffffff;
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+    display: flex;
+    gap: 20px;
+}
+.sendholder{
+    display: flex;
+    justify-content: end;
+
+}
+.sendInput{
+    outline: 0;
+    background-color: #cfcfcf;
+    border: none;
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+    height: 35px;
+}
+.btn{
+    width: 100%;
+  background-color: rgb(240, 240, 240);
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+.meshead{
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
